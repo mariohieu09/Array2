@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let num = [parseInt(prompt("Enter a number"))];
+let x = num.toString();
+let y = [x[0]]
+console.log(y);
+for(i = 1; i < x.length ; i++){
+    if(x[i - 1] %2 ==0 && x[i]%2 == 0){
+        y.push("-", x[i]);
+    }else{
+        y.push(x[i]);
+    }
+}
+document.write(y.join(''));
+</script>
+</body>
+</html>
